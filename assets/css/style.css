@@ -155,12 +155,28 @@ table{
 #add_user .form-group{
     margin: .4em 0;
 }
+.login_btn {
+    align-self: left;
+}
 
-
+.GFG {
+    background-color: rgb(24, 219, 145);
+    border: 2px solid rgb(24, 219, 145);
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+    text-decoration:none;
+}
 #add_user .form-group textarea,
 #update_user .form-group textarea,
 #update_user .form-group input[type="text"],
 #update_user .form-group input[type="number"],
+#update_user .form-group input[type="password"],
+#add_user .form-group input[type="password"],
 #add_user .form-group input[type="text"]{
     width: 100%;
     padding: .6em 1em;
