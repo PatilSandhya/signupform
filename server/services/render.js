@@ -36,18 +36,17 @@ exports.log_in = async(req, res)=>{
             const passMatch = await bcrypt.compare(password, userLogin.password);
             const name = userLogin.fname
             if(!passMatch){
-                res.json({message:"not match pass"});
-                console.log("not match pass");
+                res.json({message:"wrong password"});
+                console.log("wrong password");
 
             }
             else{
-                console.log("login");
+                console.log("Login Successfully");
                 res.render('login.ejs', {name});
 
             } 
         }else{
-            res.json({message:" invalid"});
-
+            res.json({message:"Email is not registered!"});
         }
         
     }
